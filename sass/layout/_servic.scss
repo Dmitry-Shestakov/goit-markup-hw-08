@@ -1,0 +1,37 @@
+.service {
+  padding-bottom: 94px;
+}
+
+.service__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.service__title {
+  color: var(--title-text-color);
+  @include font(36px, 1.16, 700, null);
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.service__wrap {
+  position: relative;
+}
+
+.service__item:hover {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.service__top-text {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  @include font(14px, 1.14, 700, null);
+  color: #ffffff;
+  background: rgba(47, 48, 58, 0.8);
+}
