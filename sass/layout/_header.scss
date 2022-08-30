@@ -237,9 +237,12 @@ header {
 
 .mob-soc {
   display: flex;
+  flex-wrap: wrap;
 }
 .mob-soc__item {
+  margin-right: 10px;
 }
+
 .mob-soc__link {
   @include font(18px, 1.2, 500, 0.02em);
   color: var(--accent-color);

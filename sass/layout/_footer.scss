@@ -11,10 +11,41 @@
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
+  width: 100%;
+  flex-wrap: wrap;
 
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+.footer__contact {
+  align-items: center;
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+  }
+}
+
+address {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+  }
 }
 
 .footer__location {
@@ -33,7 +64,7 @@
   }
 }
 
-.footer__contact {
+.footer__link {
   @include font(14px, 1.7, null, null);
   font-style: normal;
   color: rgba(255, 255, 255, 0.6);
@@ -47,8 +78,17 @@
 }
 
 .social-footer {
-  display: inline-block;
-  margin-left: 70px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: inline-block;
+    margin-left: 70px;
+  }
 }
 .social-footer__title {
   @include font(14px, 1.14, 700, null);
@@ -84,21 +124,39 @@
 }
 
 .subscribe {
-  display: block;
-  margin-left: 93px;
-  justify-content: baseline;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: block;
+    margin-left: 93px;
+    justify-content: baseline;
+  }
 }
 
 .subscribe__form {
+  align-items: center;
   display: flex;
-  justify-content: baseline;
+  flex-direction: column;
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: baseline;
+  }
 }
 
 .subscribe-footer__mail {
-  width: 358px;
-  height: 50px;
+  width: 95vw;
+
   padding: 15px;
-  margin-right: 12px;
+
   @include font(16px, 1.25, null, null);
   color: #ffffff;
   background-color: rgba(47, 48, 58, 1);
