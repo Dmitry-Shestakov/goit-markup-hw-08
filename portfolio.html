@@ -36,7 +36,6 @@
           </ul>
         </nav>
 
-        <!--Контакты-->
         <div class="contacts-position">
           <ul class="contacts list">
             <li class="contacts__item">
@@ -56,6 +55,92 @@
               >
             </li>
           </ul>
+        </div>
+        <button
+          type="button"
+          class="menu-open js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="24" height="16">
+            <use href="./images/symbol-defs (1).svg#icon-menu-open"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mob-menu js-menu-container" id="mobile-menu">
+        <div class="container">
+          <div class="mob-menu__top">
+            <button type="button" class="menu-close js-close-menu">
+              <svg width="18" height="18">
+                <use href="./images/symbol-defs (1).svg#icon-close"></use>
+              </svg>
+            </button>
+            <nav class="mob-menu__nav">
+              <ul class="mob-menu__list list">
+                <li class="mob-menu__item">
+                  <a href="./index.html" class="mob-menu__link mob-menu__link--current">Студия</a>
+                </li>
+                <li class="mob-menu__item">
+                  <a href="./portfolio.html" class="mob-menu__link">Портфолио</a>
+                </li>
+                <li class="mob-menu__item">
+                  <a href="./index.html" class="mob-menu__link">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="mob-menu__bottom">
+            <div class="mob-contacts__position">
+              <ul class="mob-contacts list">
+                <li class="mob-contacts__item">
+                  <a href="tel:+380961111111" class="mob-contacts__link-tel">+38 096 111 11 11</a>
+                </li>
+                <li class="mob-contacts__item">
+                  <a href="malito:info@devstudio.com" class="mob-contacts__link-mal"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <ul class="mob-soc list">
+              <li class="mob-soc__item">
+                <a
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="mob-soc__link"
+                  >Instagram
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://twitter.com/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="mob-soc__link"
+                  >Twitter</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://uk-ua.facebook.com/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="mob-soc__link"
+                  >Facebook
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://ua.linkedin.com"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="mob-soc__link"
+                  >LinkedIn</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>

@@ -6,6 +6,9 @@ header {
   display: flex;
   align-items: center;
   height: 80px;
+  @media screen and (max-width: 767px) {
+    max-height: 60px;
+  }
 }
 
 .logo__studio--dark {
@@ -21,7 +24,7 @@ header {
 }
 
 .navigation {
-  display: none;
+  display: flex;
   margin-left: 93px;
 
   .navigation__link {
@@ -38,6 +41,12 @@ header {
   & .navigation__link:hover,
   & .navigation__link:focus {
     color: var(--accent-color);
+  }
+}
+
+@media (max-width: 767px) {
+  .navigation {
+    display: none;
   }
 }
 
@@ -72,8 +81,19 @@ header {
 }
 
 .contacts {
-  display: none;
+  display: flex;
   margin-left: auto;
+}
+
+@media (max-width: 767px) {
+  .contacts {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .contacts {
+    flex-wrap: wrap;
+  }
 }
 
 .contacts__item {
@@ -142,6 +162,12 @@ header {
   &:focus,
   &:hover {
     fill: var(--accent-color);
+  }
+}
+
+@media (min-width: 768px) {
+  .menu-open {
+    display: none;
   }
 }
 
