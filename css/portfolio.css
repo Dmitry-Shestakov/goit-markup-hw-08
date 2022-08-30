@@ -220,8 +220,10 @@ header {
   height: 100vh;
   background-color: #ffffff;
   top: 0;
-  padding-top: 10px;
+  padding-top: 48px;
   padding-bottom: 48px;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
 }
 .mob-menu > .container {
   display: -webkit-box;
@@ -239,7 +241,15 @@ header {
   padding-left: 40px;
 }
 
+.mob-menu.is-open {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
 .menu-open {
+  position: absolute;
+  right: 15px;
+  top: 10px;
   margin-left: auto;
   width: 40px;
   height: 40px;
@@ -255,6 +265,9 @@ header {
 }
 
 .menu-close {
+  position: absolute;
+  right: 15px;
+  top: 10px;
   display: block;
   margin-left: auto;
   width: 40px;
