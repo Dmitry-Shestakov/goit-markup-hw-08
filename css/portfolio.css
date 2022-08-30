@@ -222,8 +222,6 @@ header {
   top: 0;
   padding-top: 10px;
   padding-bottom: 48px;
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
 }
 .mob-menu > .container {
   display: -webkit-box;
@@ -239,11 +237,6 @@ header {
           justify-content: space-between;
   overflow: auto;
   padding-left: 40px;
-}
-
-.mob-menu.is-open {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
 }
 
 .menu-open {

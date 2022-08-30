@@ -110,10 +110,9 @@ header {
   height: 100vh;
   background-color: #ffffff;
   top: 0;
-
   padding-top: 10px;
   padding-bottom: 48px;
-  transform: translateX(100%);
+  // transform: translateX(100%);
   > .container {
     display: flex;
     flex-direction: column;
@@ -125,7 +124,7 @@ header {
 }
 
 .mob-menu.is-open {
-  transform: translateX(0);
+  // transform: translateX(0);
 }
 
 .menu-open {
