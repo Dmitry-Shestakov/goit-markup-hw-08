@@ -5,7 +5,8 @@ header {
 .header-container {
   display: flex;
   align-items: center;
-  height: 80px;
+  position: relative;
+
   @media screen and (max-width: 767px) {
     max-height: 60px;
   }
@@ -77,12 +78,19 @@ header {
 }
 
 .contacts-position {
-  margin-left: auto;
+  position: absolute;
+  right: 0;
+  padding-right: 15px;
 }
 
 .contacts {
-  display: flex;
-  margin-left: auto;
+  @media (min-width: 768px) {
+    flex-wrap: wrap;
+    align-content: center;
+  }
+  @media (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 @media (max-width: 767px) {
@@ -97,17 +105,23 @@ header {
 }
 
 .contacts__item {
-  margin-right: 50px;
+  margin-bottom: 10px;
   .contacts &:last-child {
-    margin-right: 0;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: 1200px) {
+    margin-right: 50px;
+    margin-bottom: 0;
+    .contacts &:last-child {
+      margin-right: 0;
+    }
   }
 }
 
 .contacts__link {
   display: flex;
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
   color: var(--primary-text-color);
   @include font(14px, 1.14, 500, 0.02em);
   text-decoration: none;
@@ -115,6 +129,11 @@ header {
   &:hover,
   &:focus {
     color: var(--accent-color);
+  }
+
+  @media (min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 

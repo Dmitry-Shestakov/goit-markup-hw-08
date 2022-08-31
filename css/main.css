@@ -367,7 +367,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 80px;
+  position: relative;
 }
 @media screen and (max-width: 767px) {
   .header-container {
@@ -448,14 +448,25 @@ header {
 }
 
 .contacts-position {
-  margin-left: auto;
+  position: absolute;
+  right: 0;
+  padding-right: 15px;
 }
 
-.contacts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: auto;
+@media (min-width: 768px) {
+  .contacts {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+}
+@media (min-width: 1200px) {
+  .contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 @media (max-width: 767px) {
@@ -470,10 +481,19 @@ header {
   }
 }
 .contacts__item {
-  margin-right: 50px;
+  margin-bottom: 10px;
 }
 .contacts .contacts__item:last-child {
-  margin-right: 0;
+  margin-bottom: 0;
+}
+@media (min-width: 1200px) {
+  .contacts__item {
+    margin-right: 50px;
+    margin-bottom: 0;
+  }
+  .contacts .contacts__item:last-child {
+    margin-right: 0;
+  }
 }
 
 .contacts__link {
@@ -483,8 +503,6 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
   color: var(--primary-text-color);
   font-size: 14px;
   line-height: 1.14;
@@ -496,6 +514,12 @@ header {
 }
 .contacts__link:hover, .contacts__link:focus {
   color: var(--accent-color);
+}
+@media (min-width: 1200px) {
+  .contacts__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 .contacts__icon {
@@ -719,6 +743,7 @@ header {
     background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(/images/hero-bg-2x.jpg);
     padding-top: 200px;
     padding-bottom: 200px;
+    max-width: 1600px;
   }
 }
 
