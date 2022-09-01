@@ -28,32 +28,32 @@
   background-position: center;
 
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(./images/hero-bg-mob.jpg);
+    url(/images/hero-bg-mob.jpg);
 
   @include retina {
     background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
-      url(./images/hero-bg-mob-2x.jpg);
+      url(/images/hero-bg-mob-2x.jpg);
   }
 
   @media screen and (min-width: 768px) {
     background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
-      url(./images/hero-bg-tab.jpg);
+      url(/images/hero-bg-tab.jpg);
 
     @include retina {
       background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
-        url(./images/hero-bg-tab-2x.jpg);
+        url(/images/hero-bg-tab-2x.jpg);
     }
   }
   @media screen and (min-width: 1200px) {
     background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
-      url(./images/hero-bg.jpg);
+      url(/images/hero-bg.jpg);
     max-width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
 
     @include retina {
       background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
-        url(./images/hero-bg-2x.jpg);
+        url(/images/hero-bg-2x.jpg);
     }
   }
 }
