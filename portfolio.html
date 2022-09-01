@@ -112,7 +112,7 @@
                   >Instagram
                 </a>
               </li>
-              <li>
+              <li class="mob-soc__item">
                 <a
                   href="https://twitter.com/"
                   target="_blank"
@@ -121,7 +121,7 @@
                   >Twitter</a
                 >
               </li>
-              <li>
+              <li class="mob-soc__item">
                 <a
                   href="https://uk-ua.facebook.com/"
                   target="_blank"
@@ -130,7 +130,7 @@
                   >Facebook
                 </a>
               </li>
-              <li>
+              <li class="mob-soc__item">
                 <a
                   href="https://ua.linkedin.com"
                   target="_blank"
@@ -144,6 +144,7 @@
         </div>
       </div>
     </header>
+
     <main>
       <!--Портфолио-->
       <section class="portfolio">
@@ -171,7 +172,22 @@
           <ul class="cards-set list">
             <li class="cards-set__item">
               <div class="project">
-                <img src="./images/Портфолио/Technoquack.jpg" alt="Ноутбук" width="370" />
+                <picture>
+                  <source
+                    srcset="./images/1card-des.jpg 1x, ./images/1card-des-2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="./images/1card-tab.jpg 1x, ./images/1card-tab-2x.jpg 2x"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="./images/1card-mob.jpg 1x, ./images/1card-mob-2x.jpg 2x"
+                    media="(max-width: 767px)"
+                  />
+
+                  <img src="./images/Портфолио/Technoquack.jpg" alt="Ноутбук" width="450" />
+                </picture>
 
                 <p class="project__top-text">
                   Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
@@ -186,11 +202,27 @@
             </li>
             <li class="cards-set__item">
               <div class="project">
-                <img
-                  src="./images/Портфолио/Poster-New-Orleans-vs-Golden-Star.jpg"
-                  alt="Постер-New-Orlean vs Golden Star"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="./images/2card-des.jpg 1x, ./images/2card-des-2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="./images/2card-tab.jpg 1x, ./images/2card-tab-2x.jpg 2x"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="./images/2card-mob.jpg 1x, ./images/2card-mob-2x.jpg 2x"
+                    media="(max-width: 767px)"
+                  />
+
+                  <img
+                    src="./images/Портфолио/Poster-New-Orleans-vs-Golden-Star.jpg"
+                    alt="Постер-New-Orlean vs Golden Star"
+                    width="450"
+                  />
+                </picture>
+
                 <p class="project__top-text">
                   Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
                   Все это позволит посетителю получить исчерпывающие сведения о компании или частном
@@ -205,11 +237,27 @@
 
             <li class="cards-set__item">
               <div class="project">
-                <img
-                  src="./images/Портфолио/Restaurant-Seafood.jpg"
-                  alt="Логотип ресторана Seafood"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="./images/3card-des.jpg 1x, ./images/3card-des-2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="./images/3card-tab.jpg 1x, ./images/3card-tab-2x.jpg 2x"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="./images/3card-mob.jpg 1x, ./images/3card-mob-2x.jpg 2x"
+                    media="(max-width: 767px)"
+                  />
+
+                  <img
+                    src="./images/Портфолио/Restaurant-Seafood.jpg"
+                    alt="Логотип ресторана Seafood"
+                    width="450"
+                  />
+                </picture>
+
                 <p class="project__top-text">
                   Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
                   Все это позволит посетителю получить исчерпывающие сведения о компании или частном
@@ -223,7 +271,23 @@
             </li>
             <li class="cards-set__item">
               <div class="project">
-                <img src="./images/Портфолио/Project-Prime.jpg" alt="Наушники" width="370" />
+                <picture>
+                  <source
+                    srcset="./images/4card-des.jpg 1x, ./images/4card-des-2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="./images/4card-tab.jpg 1x, ./images/4card-tab-2x.jpg 2x"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="./images/4card-mob.jpg 1x, ./images/4card-mob-2x.jpg 2x"
+                    media="(max-width: 767px)"
+                  />
+
+                  <img src="./images/Портфолио/Project-Prime.jpg" alt="Наушники" width="450" />
+                </picture>
+
                 <p class="project__top-text">
                   Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
                   Все это позволит посетителю получить исчерпывающие сведения о компании или частном
@@ -237,7 +301,23 @@
             </li>
             <li class="cards-set__item">
               <div class="project">
-                <img src="./images/Портфолио/Project-Boxes.jpg" alt="Коробки" width="370" />
+                <picture>
+                  <source
+                    srcset="./images/5card-des.jpg 1x, ./images/5card-des-2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="./images/5card-tab.jpg 1x, ./images/5card-tab-2x.jpg 2x"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="./images/5card-mob.jpg 1x, ./images/5card-mob-2x.jpg 2x"
+                    media="(max-width: 767px)"
+                  />
+
+                  <img src="./images/Портфолио/Project-Boxes.jpg" alt="Коробки" width="450" />
+                </picture>
+
                 <p class="project__top-text">
                   Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
                   Все это позволит посетителю получить исчерпывающие сведения о компании или частном
@@ -251,11 +331,27 @@
             </li>
             <li class="cards-set__item">
               <div class="project">
-                <img
-                  src="./images/Портфолио/Inspiration-has-no-Borders.jpg"
-                  alt="Монитор"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="./images/6card-des.jpg 1x, ./images/6card-des-2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="./images/6card-tab.jpg 1x, ./images/6card-tab-2x.jpg 2x"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="./images/6card-mob.jpg 1x, ./images/6card-mob-2x.jpg 2x"
+                    media="(max-width: 767px)"
+                  />
+
+                  <img
+                    src="./images/Портфолио/Inspiration-has-no-Borders.jpg"
+                    alt="Монитор"
+                    width="450"
+                  />
+                </picture>
+
                 <p class="project__top-text">
                   Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
                   Все это позволит посетителю получить исчерпывающие сведения о компании или частном
@@ -269,11 +365,27 @@
             </li>
             <li class="cards-set__item">
               <div class="project">
-                <img
-                  src="./images/Портфолио/Edition-Limited-Edition.jpg"
-                  alt="Журнал"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="./images/7card-des.jpg 1x, ./images/7card-des-2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="./images/7card-tab.jpg 1x, ./images/7card-tab-2x.jpg 2x"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="./images/7card-mob.jpg 1x, ./images/7card-mob-2x.jpg 2x"
+                    media="(max-width: 767px)"
+                  />
+
+                  <img
+                    src="./images/Портфолио/Edition-Limited-Edition.jpg"
+                    alt="Журнал"
+                    width="450"
+                  />
+                </picture>
+
                 <p class="project__top-text">
                   Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
                   Все это позволит посетителю получить исчерпывающие сведения о компании или частном
@@ -287,7 +399,23 @@
             </li>
             <li class="cards-set__item">
               <div class="project">
-                <img src="./images/Портфолио/Project-LAB.jpg" alt="Бирка" width="370" />
+                <picture>
+                  <source
+                    srcset="./images/8card-des.jpg 1x, ./images/8card-des-2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="./images/8card-tab.jpg 1x, ./images/8card-tab-2x.jpg 2x"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="./images/8card-mob.jpg 1x, ./images/8card-mob-2x.jpg 2x"
+                    media="(max-width: 767px)"
+                  />
+
+                  <img src="./images/Портфолио/Project-LAB.jpg" alt="Бирка" width="450" />
+                </picture>
+
                 <p class="project__top-text">
                   Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
                   Все это позволит посетителю получить исчерпывающие сведения о компании или частном
@@ -301,11 +429,27 @@
             </li>
             <li class="cards-set__item">
               <div class="project">
-                <img
-                  src="./images/Портфолио/Growing-Business.jpg"
-                  alt="Руки печатают на ноутбуке"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="./images/9card-des.jpg 1x, ./images/9card-des-2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="./images/9card-tab.jpg 1x, ./images/9card-tab-2x.jpg 2x"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="./images/9card-mob.jpg 1x, ./images/9card-mob-2x.jpg 2x"
+                    media="(max-width: 767px)"
+                  />
+
+                  <img
+                    src="./images/Портфолио/Growing-Business.jpg"
+                    alt="Руки печатают на ноутбуке"
+                    width="450"
+                  />
+                </picture>
+
                 <p class="project__top-text">
                   Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
                   Все это позволит посетителю получить исчерпывающие сведения о компании или частном
@@ -321,19 +465,19 @@
         </div>
       </section>
     </main>
-    <!--Адресс-->
+    <!-- Адресс-->
     <footer class="footer">
       <div class="footer__container">
-        <div>
+        <div class="footer__contact">
           <a href="/index.html" class="logo">Web<span class="logo__studio--white">Studio</span></a>
           <address>
             <p class="footer__location">г. Киев, пр-т Леси Украинки, 26</p>
             <ul class="footer__contact-list list">
               <li class="footer__contact-item">
-                <a href="malito:info@devstudio.com" class="footer__contact">info@devstudio.com</a>
+                <a href="malito:info@devstudio.com" class="footer__link">info@devstudio.com</a>
               </li>
               <li class="footer__contact-item">
-                <a href="tel:+380961111111" class="footer__contact">+38 096 111 11 11</a>
+                <a href="tel:+380961111111" class="footer__link">+38 096 111 11 11</a>
               </li>
             </ul>
           </address>
@@ -398,7 +542,7 @@
           <p class="subscribe-footer__title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
 
           <form class="subscribe__form">
-            <label>
+            <label class="subscribe__label">
               <input
                 type="email"
                 name="email"
