@@ -5,7 +5,6 @@ header {
 .header-container {
   display: flex;
   align-items: center;
-  position: relative;
 
   @media screen and (max-width: 767px) {
     max-height: 60px;
@@ -78,9 +77,7 @@ header {
 }
 
 .contacts-position {
-  position: absolute;
-  right: 0;
-  padding-right: 15px;
+  margin-left: auto;
 }
 
 .contacts {

@@ -260,7 +260,6 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
 }
 @media screen and (max-width: 767px) {
   .header-container {
@@ -341,9 +340,7 @@ header {
 }
 
 .contacts-position {
-  position: absolute;
-  right: 0;
-  padding-right: 15px;
+  margin-left: auto;
 }
 
 @media (min-width: 768px) {
