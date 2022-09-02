@@ -2,12 +2,5 @@
   color: var(--accent-color);
   font-family: Raleway, cursive;
   @include font(26px, 1.2, 700, null);
-  padding-top: 24px;
-  padding-bottom: 24px;
   text-decoration: none;
-
-  @media screen and (max-width: 767px) {
-    padding-top: 16px;
-    padding-bottom: 16px;
-  }
 }

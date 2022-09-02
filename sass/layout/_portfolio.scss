@@ -1,21 +1,26 @@
 .portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .portfolio__filter {
   display: flex;
   align-items: center;
-  padding: 6px 22px;
 
   color: var(--title-text-color);
+  @media screen and (min-width: 768px) {
+    padding: 6px 22px;
+  }
 }
 
 // .portfolio__btn-list {
 //   display: flex;
-//   justify-content: space-evenly;
-//   align-items: center;
-//   padding: 6px 22px;
+
 //   margin-bottom: 50px;
 //   color: var(--title-text-color);
 //   margin-left: auto;
@@ -23,43 +28,58 @@
 //   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 // }
 
+// .portfolio__btn-list {
+//   display: flex;
+//   flex-wrap: wrap;
+//   margin-bottom: 40px;
+
+//   @media screen and (min-width: 768px) {
+//     display: flex;
+//     justify-content: center;
+//     padding: 6px 22px;
+//     margin-bottom: 30px;
+//   }
+
+//   @media screen and (min-width: 1200px) {
+//     display: flex;
+//     justify-content: space-evenly;
+
+//     padding: 6px 22px;
+//     margin-bottom: 50px;
+//     color: var(--title-text-color);
+//     margin-left: auto;
+//     margin-right: auto;
+//     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//   }
+// }
+
 .portfolio__btn-list {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 40px;
-
+  color: var(--title-text-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   @media screen and (min-width: 768px) {
-    display: flex;
     justify-content: center;
-    align-items: center;
+    padding: 6px 22px;
     margin-bottom: 30px;
   }
 
   @media screen and (min-width: 1200px) {
-    display: flex;
     justify-content: space-evenly;
-    align-items: center;
-    padding: 6px 22px;
+
     margin-bottom: 50px;
-    color: var(--title-text-color);
+
     margin-left: auto;
     margin-right: auto;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
-.filter__item:not(:last-child) {
+.portfolio__btn-item:not(:last-child) {
   margin-right: 8px;
 
   @media screen and (max-width: 767px) {
     margin-bottom: 15px;
-  }
-}
-
-.portfolio__btn-item {
-  margin-right: 8px;
-  .portfolio__btn-list &:last-child {
-    margin-right: 0;
   }
 }
 
